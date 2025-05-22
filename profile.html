@@ -4,27 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人中心</title>
+    <title>个人信息</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
 
+        nav {
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin-right: 15px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .profile-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            display: grid;
+            grid-template-columns: 200px auto; /* 左侧图片占200px宽度，右侧内容自动适应剩余空间 */
+            gap: 30px; /* 增大图片与信息之间的间距 */
+            align-items: start; /* 让内容从顶部开始对齐，而不是垂直居中 */
+        }
+
+        .profile-image {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
     </style>
-    </head>
+</head>
 
 <body>
     <div class="container">
-       <nav>
-        <a href ="index.html">首页</a>
-        <a href ="profile.html">个人信息</a>
-    </nav>
-        <div class="profile-info">
-            <h2>Jin Lei</h2>
-            <p>20222102</p>
-            <p><strong>大学(university):</strong> North Ming Zu university</p>           
-            <p><strong>学院:</strong> 计算机科学与技术学院</p>
-            <p><strong>专业:</strong> 软件工程</p>
-            <p><strong>邮箱(email):</strong> 15560674459@163.com</p>
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="profile.html">个人信息</a>
+            <a href="uni.html">大学信息</a>
+        </nav>
+        <div class="profile-card">
+            <img src="d7a6dae759afe8f1a54d09c9437fcf0.jpg" alt="20222102" class="profile-image">
+            <div> 
+                <h2>Jin Lei</h2>
+                <p>20222102</p>
+                <p><strong>大学(university):</strong> North Ming Zu university</p>           
+                <p><strong>学院:</strong> 计算机科学与技术学院</p>
+                <p><strong>专业:</strong> 软件工程</p>
+                <p><strong>邮箱(email):</strong> 15560674459@163.com</p>
+            </div>
         </div>
-        
-
     </div>
 </body>
+
+</html>
